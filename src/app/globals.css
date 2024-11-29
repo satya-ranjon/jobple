@@ -2,20 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Root CSS Variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Colors */
+  --color-background-page: #fafafa;
+  --color-background-component: #ffffff;
+  --color-brand-primary: #0095ee;
+  --color-semantic-link: #2f6de0;
+  --color-text-black: #1f1f1f;
+  --color-border-default: #efefef7e;
+  --color-border-component: #ececec;
+  --color-border-button: #d6d3d0;
+  --color-table-header-background: #f2f1ef;
+  --color-status-label-closed: #ddd;
+  --component-list-border: #efefef;
+  --component-button-hover-primary: #026fe8;
+  --component-sidebar-background: rgba(0, 149, 238, 0.2);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  /* Spacing */
+  --spacing-padding-xs: 4px;
+  --spacing-padding-s: 8px;
+  --spacing-padding-m: 12px;
+  --spacing-padding-lg: 16px;
+  --spacing-padding-xl: 24px;
+  --spacing-padding-3xl: 32px;
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-lg: 12px;
+
+  /* Typography Sizes */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 24px;
+
+  /* Typography Weights */
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  /* Component-Specific */
+  --component-border-width: 1px;
+  --component-border-width-sm: 0.5px;
+
+  /* Gaps */
+  --spacing-gap-ss: 2px;
+  --spacing-gap-xs: 4px;
 }
